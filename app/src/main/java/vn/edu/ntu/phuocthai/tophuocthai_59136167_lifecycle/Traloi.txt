@@ -1,0 +1,26 @@
+câu 4: 
+Khi bấm nút back, các phương thức vòng đời sẽ chạy theo thứ tự: 
++onPause 
++onStop 
++onDestroy 
+
+Khi mở lại ứng dụng, các phương thức vòng đời sẽ chạy theo thứ tự:
++onCreate
++onStart
++onResume
+
+Câu 5:
+
+Khi bấm nút home, các phương thức vòng đời sẽ chạy theo thứ tự:
++onPause
++onStop
+
+Khi mở lại ứng dụng, các phương thức vòng đời sẽ chạy theo thứ tự:
++onRestart
++onStart
++onResume
+
+Câu 6:
+
+Lúc tắt ứng dụng, ta nên lưu lại dữ liệu trong vòng đời Stop, vì khi ta bấm nút home lẫn nút back phương thức vòng đời onStop đều sẽ chạy.
+Dữ liệu được lưu lại ta sẽ khai báo và gọi lại trong phương thức vòng đời onResume để xuất ra màn hình khi mở lại.
